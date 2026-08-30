@@ -27,6 +27,7 @@
 		<UndefinedClass>
 			<errorLevel type="suppress">
 				<referencedClass name="OC" />
+                                <referencedClass name="OCA\Files_Sharing\External\Storage" />                                                 
 			</errorLevel>
 		</UndefinedClass>
 	</issueHandlers>

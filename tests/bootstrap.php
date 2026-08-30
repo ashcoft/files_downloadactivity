@@ -10,12 +10,10 @@ if (!defined('PHPUNIT_RUN')) {
 }
 
 require_once __DIR__ . '/../../../lib/base.php';
+require_once __DIR__ . '/../../../tests/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
-// Fix for "Autoload path not allowed: .../tests/lib/testcase.php"
-\OC::$loader->addValidRoot(OC::$SERVERROOT . '/tests');
-
-// Fix for "Autoload path not allowed: .../files_downloadactivity/tests/testcase.php"
-\OC_App::loadApp('files_downloadactivity');
+\OCP\Server::get(\OCP\App\IAppManager::class)->loadApp('files_downloadactivity');
 
 if (!class_exists('\PHPUnit\Framework\TestCase')) {
 	require_once('PHPUnit/Autoload.php');

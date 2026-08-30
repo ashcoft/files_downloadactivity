@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 Dony Wibowo
+# SPDX-License-Identifier: MIT
+
 # PULLFROG ACTION — DO NOT EDIT EXCEPT WHERE INDICATED
 name: Pullfrog
 run-name: ${{ inputs.name || github.workflow }}

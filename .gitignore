@@ -57,3 +57,9 @@ nbproject
 /vendor
 /tests/.phpunit.result.cache
 .php-cs-fixer.cache
+
+.nx/installation
+.nx/cache
+.nx/workspace-data
+.nx/self-healing
+.nx/migrate-runs

@@ -57,3 +57,5 @@ nbproject
 /vendor
 /tests/.phpunit.result.cache
 .php-cs-fixer.cache
+.agent/dist/
+.agent/node_modules/
